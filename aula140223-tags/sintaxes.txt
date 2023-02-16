@@ -54,7 +54,8 @@ CHAMANDO O ENDEREÇO DE UMA IMAGEM DE DENTRO DO NOSSO DIRETORIO
 
 
 ======================================================== 
- ATALHO PARA CRIACAO DA ESTRUTURA BASE NO VSCode: ! + TAB 
+ ATALHO PARA CRIACAO DA ESTRUTURA BASE NO VSCode:
+                         ! + TAB 
 ======================================================== 
 <!DOCTYPE html>
 <html lang="en"> <!--define a linguagem. bom colocar "pt-BR" em caso de acessibilidade-->

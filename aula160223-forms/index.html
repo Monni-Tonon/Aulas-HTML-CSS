@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+
+    <head> 
+        <meta charset="UTF-8">
+        <title>Aula de HTML e CSS - Forms</title>
+    </head>
+<!--<input>, <textarea>, <select> -> campos de preenchimento-->
+<!--<label> -> rotulo de campos de preenchimento. -->
+<!--<fieldset> -> separa o form em sessoes. em campos separados na pagina. -->
+<!--Legend> coloca uma "legenda. no ex abaixo, esta dando nome ao filedset"-->    
+    <body> 
+        <h3>Cadastro de usuário</h3>
+        <form> <!--container do formulario-->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="Nome">Nome:</label> <input required type="text" id="Nome" name="nome" placeholder="Digite seu nome aqui" minlength="2" maxlength="100" size="30"> <br> <!--minlength e maxlength qtd de caracteres e size o tamanho do campo. melhor tratado em css-->
+                
+                <label for="Idade">Idade:</label> <input type="number" id="Idade" min="0" max="100" name="idade"> <br> <!--type number so permite digitar numeros. Min e max limita as idades-->
+                
+                <label for="dt_nasc">Data nascimento:</label> <input type="date" id="dt_nasc" min="1920-01-01" max="2023-01-01" name="dtNasc"> <br> <!-- type date formata para inclusao de data. Min e max limita a inclusao do ano-->
+                
+                <label for="sex">Sexo:</label> 
+                masculino <input type="radio" id="sex" name="Sexo"><!--type radio, marcação redonda. name tendo o mesmo valor, permite que a marcação seja feita somente em uma das opcoes-->
+                feminino <input type="radio" id="sex" name="Sexo"><br>
+                
+                <label for="e_mail">E-mail:</label> <input type="email" id="e_mail" name="email"> <br> <!--type email valida o formato de email-->
+                
+                <label for="pwrd">Senha:</label> <input type="password" id="pwrd" name="senha"> <br> <!--type password oculta a senha digitada-->
+                
+                <label for="phone">Telefone:</label> <input type="tel" id="phone" name="telefone"> <br>
+                
+                <label for="hora">Hora:</label> <input type="time" id="hora"> <br>
+                
+                <label for="foto">Foto:</label> <input type="file" id="foto" multiple accept=".jpeg,.png" name="avatar"> <br> <!--type file gera botao para upload de arquivo. o multiple permite upload de mais de um. o accept delimita os tipos de arquivos a serem enviados-->
+            </fieldset>
+<br>
+            <fieldset>
+                <legend>Outras informações</legend>
+                <label for="insta">Instagram:</label> <input type="url" id="insta" name="urlInstagram" > <br> <!--type url so vai permitir paginas de web-->
+                
+                Areas de interesse:<br>
+                <label for="MD">Midias digitais</label> <input name="interesse" id="MD" type="checkbox">
+                <label for="WD">Webdesign</label> <input name="interesse" id="WD" type="checkbox">
+                <label for="BE">Back-end</label> <input name="interesse" id="BE" type="checkbox"> <br>
+                
+                <label for="cor">Personalize seu crachá:</label> <input type="color" id="cor" name="cor"> <br> <!-- type color permite escolher a cor-->
+                
+                <label for="nivel_engl">Nivel de ingles:</label> 0<input type="range" id="nivel_engl" min="0" max="5" list="number">5<br><!--tyope range apresenta uma barra e o min e max determina o min e max a ser escolhido pelo user-->
+                    <datalist id="number">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                    </datalist>
+                
+                Conte suas experiencias:<br><textarea placeholder="Max de 1400 caracteres." name="descricao"></textarea><br>
+                
+                <label for="escol">Escolaridade:</label><select name="escolaridade" id="escol">
+                    <option disabled selected>Selecione uma opção</option><!--o select permite a criacao do dropdowna option é a opcao a ser escolhida. disable, nao permite que a opcao seja escolhida. selected é a opcao que aparecera de inicio -->
+                    <option>Ens medio completo</option>
+                    <option>Ens superior incompleto</option>
+                    <option>Ens superior completo</option>
+                        </select><br>
+                
+            </fieldset>
+            Botao escondido, para identificacao interna, que nao precise do user ver. verificar pelo "inspecionar">
+            <input type="hidden" value="colocar um id qq por ex"><br>
+            <br>Aceito receber as novidades por e-mail. <input type="checkbox" required="yes"> <br>
+            <br><br>
+            <input type="submit" name="Enviar" id="envio" value="Input_Enviar">
+            <button type="submit">Botao_Enviar</button>
+            <button type="reset">Botao_Limpar</button>
+        </form>
+        </body>
+</html>
+<!-- A tag name está setada em todas pois é ela que identifica a informação que chegará no bck end-->
+<!-- Diferenca entre submit e button: NENHUMA-->

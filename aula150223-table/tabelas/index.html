@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 2 de HTML e CSS</title>
+</head>
+    <!--<tr> table row: linhas da tabela-->
+    <!--<td> table data/colunas: dados da tabela-->
+    <!--<th> table head: itens dentro do cabeçalho-->
+    <!--<thead> table head: separa os itens do cabeçalho do corpo da tabela-->
+    <!--<tbody> table body: separa os itens do corpo da tabela-->
+    <!--<tfoot> table foot: rodapé da tabela-->
+
+        <!-- ATALHO:
+            realizar multiplas seleções: CTRL + D
+        -->
+<body>
+
+    <h1 align="center">Tabelas</h1>
+
+    <table border="1">
+        <colgroup>
+            <col style="width: 150px;"> <!--ou col width:"150px"-->
+            <col style="width: 150px;">
+            <col style="width: 80px;">
+            <col style="width: 100px;">
+        </colgroup>
+        <tr> <!--essa linha terá as celulas mescladas-->
+            <th align="center" colspan="4">PROFESSORES SOULCODE</th>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Área</th>
+            <th>Idade</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>Monnicy T</td>
+            <td>Developer</td>
+            <td>30</td>
+            <td rowspan="2">Esp Santo</td>
+        </tr>
+        <tr>
+            <td>Camilla B</td>
+            <td>Front End</td>
+            <td>35</td>
+            <!--<td>Esp Santo</td>: linha comentada pois houve a mescla com a outra celulá que estava com dado repetido -->
+        </tr>
+        <tr>
+            <td>Adriano D</td>
+            <td>DBA</td>
+            <td>39</td>
+            <td>Ceará</td>
+        </tr>
+        <tr> <!--essa linha terá as celulas mescladas-->
+            <td colspan="4">Aqui é o rodapé</td>
+        </tr>
+    </table>
+
+<hr>
+
+<h3>Times do Brasil</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Score</th>
+                <th>Gols</th>
+                <th>Vitorias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fluminense</td>
+                <td>320</td>
+                <td>24</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Vasco</td>
+                <td>298</td>
+                <td>30</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+                <td>318</td>
+                <td>22</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+                <td>210</td>
+                <td>10</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Corinthians</td>
+                <td>260</td>
+                <td>19</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    
+        <tfoot>
+            <tr>
+                <td colspan="4">Atualização diária</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+HTML -> HyperText Markup Language (Linguagem de marcação de hyper texto)
+HyperText -> Texto inteligente
+Markup -> Marcação (Tags)
+Language -> Linguagem (sintaxe/regras)
+
+Tags:
+início    fim
+<tag>     </tag>
+
+<h1>Texto com um tamanho 1 de titulo</h1>
+<h2>Texto com um tamanho 2 de titulo, um subtitulo</h2>
+<h3>Texto com um tamanho 3 de titulo</h3>
+<h4>Texto com um tamanho 4 de titulo</h4> <!--mais raros os tamanhos 4, 5 e 6-->
+<h4>Texto com um tamanho 5 de titulo</h5>
+<h4>Texto com um tamanho 6 de titulo</h6>
+texto sem formatação, o xpto
+<p> <!-- paragrafos -->
+
+<em> dar enfase no texto. fica visualmente igual ao italico </em>
+<hr> insere uma linha horizontal visivel na pagina. pode ser customizada
+<b> negrito </b>
+<i> italico </i>
+<strong> destaque. é mais função sintatica. tem aparencia negrito </strong>
+<hr> <!--insere uma linha horizontal visivel na pagina. pode ser customizada-->
+
+
+
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">texto q vai receber o link. será a palavra "ancora"</a>
+
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">ao clicar no link, ele abre em uma nova aba com a inclusao do target _blank</a>
+
+ <img src="" alt=""> "src" link da imagem "alt" texto alternativo caso imagem nao apareça
+
+====================================================
+CHAMANDO O ENDEREÇO DE UMA IMAGEM DIRETO DA INTERNET
+====================================================
+
+<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="">-->
+
+==============================================================
+CHAMANDO O ENDEREÇO DE UMA IMAGEM DE DENTRO DO NOSSO DIRETORIO
+==============================================================
+--> Iniciar com ./ e indicar o diretorio correto da imagem
+
+<img src="./CSS3_logo.svg">
+
+
+
+
+
+
+
+
+
+
+======================================================== 
+ ATALHO PARA CRIACAO DA ESTRUTURA BASE NO VSCode: ! + TAB 
+======================================================== 
+<!DOCTYPE html>
+<html lang="en"> <!--define a linguagem. bom colocar "pt-BR" em caso de acessibilidade-->
+    <head>
+        <meta charset="UTF-8"> <!--faz leitura dos caracteres especiais corretamente no navegador-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Prioridades CSS:
+    inline > interno > externo 
+    no documento externo, a última atribuição é a que vale. no caso do <h1> abaixo o que prevalece é a cor AMARELA
+    i, b > p
+    */
+
+/* Importancia > essa marcação anula qualquer outra especificação das imagens no doc*/
+img{
+    width: 100px !important;
+    height: 100px !important;
+}
+    h1{
+        color: blue;
+    }
+
+    h1{
+        color: yellow;
+    }
+
+    i{
+        color: green;
+    }
+
+    b{
+        color: pink;
+    }
+
+    P{
+        color: blueviolet;
+    }
+
+    div img{ /* a imagem q esta dentro de uma div vai ter essas especificações*/
+        width: 200px; /*largura*/
+        height: 200px; /*altura*/
+    }
+
+    div section article img{ /* precisa especificar onde esta a img que eu quero mudar */
+        width: 400px;
+        height: 400px;
+        border-color: black;
+    }
+    img{
+        width: 300px; /*largura*/
+        height: 300px; /*altura*/
+    }

@@ -1,0 +1,47 @@
+/*
+box-model -> Modelo de caixa
+            Largura
+            Altura
+            Borda
+            Espaçameno interno
+            Margem
+*/
+/* 
+    border-box -> Tamanho da caixa -> width
+    content-box -> Tamanho da caixa -> width + padding + border
+*/
+* {
+    box-sizing: border-box; /* padroniza a box ajustada na pagina */
+}
+
+header {
+    width: 100%; /*largura 100% da pag*/
+    height: 100px;
+    /* forma resumida de definir a borda: border: 2px solid black;*/
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px; /* arredondamento das bordas, porem nao faz parte da classificacao de box-model*/
+    padding: 30px; /* Espaçamento dentro do header. distancia das bordas*/
+    box-sizing: border-box;
+}
+header a { /* pega o menu da tag <a> dentro do header */
+    /* espaçamento externo */
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+
+
+/* a tutulo de curiosidade, para arredondar a img
+#circulo, img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    border-radius: 50px; }/* metade de 100 faz-se o arredondamento. um quadrado vira circulo :) */

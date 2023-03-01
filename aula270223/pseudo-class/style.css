@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding: 10px 5px;
+    background-color: rgb(25, 148, 25);
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+
+    text-decoration: none; /*remove o underline do link*/
+    color: white;
+    /*efeito de transicao no objeto:
+    o property é a propriedade afetada e a duration, o tempo da transicao*/
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+/*Pseudo-classe*/
+/*
+active: qd clica
+visited: qd objeto foi acessado
+hover: qd o mouse está em cima do objeto
+*/
+
+a:visited{
+    background-color: rgb(7, 31, 7);
+}
+
+a:hover{
+    background-color: blue; 
+    transform: scale(1.1); /*aumenta a escala do objeto em 110% o 1.1*/
+   /* width: 110px;
+    height: 45px;*/ /*essas dimensoes fazem o mesmo efeito do transform scale*/
+}
+
+a:active{
+    background-color: brown;
+}

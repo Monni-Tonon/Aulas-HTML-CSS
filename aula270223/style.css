@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.quadrado{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.primeiro{
+    /*aplicar cor de fundo*/
+    background-color: #12e99015; /* os ultimos 2 numeros defines a opacidade da cor de background*/
+    /*em RGB, a opacidade vai de 0 a 1*/
+}
+
+.segundo{
+    /*fazendo um gradiente: o to left indica a direção do gradiente, começando pela primeira cor indicada*/
+    /*background: linear-gradient(to right, #f8e007, #0a06fd, green);
+    background: linear-gradient(to bottom, #f8e007, #0a06fd, green);
+    background: linear-gradient(to top, #f8e007, #0a06fd, green);
+    background: linear-gradient(45deg, #f8e007, #0a06fd, green); diagonal*/
+    background: linear-gradient(to left, #f8e007, #0a06fd, green);
+}
+
+.terceiro{
+    background: radial-gradient(#37f807, #ffff00, #0000ff);
+}
+
+.screen{
+    /*
+    vw - view width (largura da tela)
+    vh - view heith (altura da tela)
+    */
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    background-image: url("./aula270223/background/plano-de-fundo.png"); /*a img qd usada como background, nao é possivel salva-la pela internet*/
+    background-repeat: no-repeat;
+    /* formas de repeticao da img qd aplicado o zoom na pag.
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: repeat;*/
+    /*background-size: 100% 100%; mantem a img 100% fixa com zoom*/
+    /*background-position: 80% 90%;*/
+    background-size: cover; /*preenche espaço total da pag msm com zoom*/
+    background-attachment: fixed; /*fica fixa em relacao ao scrool da pag. parece com efeito paralax*/
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000088; /*o 88 esta definindo a opacidade de 50% do preto*/
+}

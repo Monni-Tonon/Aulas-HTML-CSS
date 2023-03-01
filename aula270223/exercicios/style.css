@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    border: 2px solid black;
+    background-image: url("./image/plano-de-fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    
+    padding: 30px;
+    background-color: white;
+}
+
+header a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: green;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}

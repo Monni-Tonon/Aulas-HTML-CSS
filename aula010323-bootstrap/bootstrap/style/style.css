@@ -1,9 +1,14 @@
+/*:root{
+    font-size: 10px;
+}*/
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #d4d4d4;
+    /*font-size: 2rem; /*baseado na font-size do root. significa q sera 2x o font-size do root*/
 }
 
 .card {

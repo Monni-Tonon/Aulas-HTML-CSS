@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 80%; /*nas margens terei 10% cada lado*/
+    /*background-color: red;*/
+    margin: 0 auto; /*0 pq em cima e embaixo nao quero laterais, porem auto nas laterais centraliza independente do tamanho*/
+}
+
+.main .artigo{
+    background-color: aquamarine;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    display: inline-block; /*para ficar lado a lado*/
+    margin: 10px;
+}
+
+
+/*  Responsividade >>> capacodade de um site/aplicacao web se adaptar a diferentes dispositivos */
+
+/* define a visualização para cada dispositivo que tiver sendo utilizado */
+/* orientation: landscape / portrait */
+
+/*Break-points: pontos ed quebra da pag*/
+@media (max-width: 720px) and (orientation: portrait){
+    .main .artigo{
+        background-color: palevioletred;
+        width: 150px;
+        height: 175px;
+    }
+    
+} /* se o disposito tiver uma largura menor ou igual a 720px E orientacao retrato, aplica o que estiver dentro dos {}*/
+
+/* Se o dispositivo tiver uma largura menor OU igual a 600px ou orientação paisagem */
+@media(max-width: 600px), (orientation: landscape) {
+    .main .artigo {
+        background-color: rgb(220, 97, 63);
+        width: 150px;
+        height: 175px;
+    }
+}
+
+
+/* Mobile first - celular primeiro */
+/* Se o dispositivo tiver uma largura maior ou igual a 800px */
+@media(min-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+/* Se o dispositivo tiver uma largura maior ou igual a 1000px */
+@media(min-width: 1000px) {
+    h1 {
+        font-size: 70px;
+    }
+}
